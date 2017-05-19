@@ -1,8 +1,9 @@
 body{
-	font-family:Lucida,Helvetica,sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background-color: #d3d1d1;
 }
-#topContainer{ 
+var animationSpeed = 0.5;
+#topContainer{
 	width:100%;
 	position:relative;
 	height:150px;
@@ -16,44 +17,44 @@ body{
 }
 #navBar{
 	position: relative;
-	background-color: black;
-	width:100%;
-	top:100px;
-	height: 40px;
+	width:80%;
+	left: 10%;
+	top:200px;
+	height: 46px;
 }
 #navBar ul{
-	list-style-type: none;
+		list-style-type: none;
+    margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    overflow: hidden;
+    background-color: #282828;
 }
 #navBar li{
-	margin:10px;
+	float:left;
 }
 #navBar li a{
-	float: left;
-	center: 50%;
 	text-align: center;
-	display: inline;
-	color: #ba0e0e;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px; 
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
+	color: #c92424;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+	transition: background-color 0.5s;
 }
 #navBar li a:hover {
-	color: #7a7a7a;
+	color: #e8e8e8;
+	background-color: #ba0e0e;
 }
 
 #navBar li a:hover:not(.active) {
-    color: ##ba0e0e;
+    color: #e8e8e8;
 }
 
 #navBar .active {
-    color: #7a7a7a;
-    display: block;
-    bottom:0;
+    color: #e8e8e8;
+    top:10px;
     background-color: #ba0e0e;
 }
