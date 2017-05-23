@@ -3,41 +3,35 @@ body{
 	background-color: #d3d1d1;
 }
 var animationSpeed = 0.5;
+/*Top Formatting*/
 #topContainer{
 	width:100%;
-	position:relative;
-	height:150px;
-}
-#bannerBg{
-	width: 100%;
-	position:relative;
-	bottom:100px;
-	background-color:#ba0e0e
-	padding: 10px;
+	top: 0;
+	height:300px;
+	overflow: hidden;
 }
 #navBar{
-	position: relative;
-	width:80%;
-	left: 10%;
 	top:200px;
-	height: 46px;
+	height: 70px;
+	text-align: center;
 }
 #navBar ul{
 		list-style-type: none;
-    margin: 0;
-    padding: 0;
+		padding: 10%;
+    padding-top: 10px;
+		padding-bottom: 10px;
     overflow: hidden;
     background-color: #282828;
+		display:inline-block;
 }
 #navBar li{
-	float:left;
+	float: left;
 }
 #navBar li a{
 	text-align: center;
 	color: #c92424;
-	display: block;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 30px;
 	text-decoration: none;
   font-weight: bold;
   -webkit-transition: color 0.5s;
